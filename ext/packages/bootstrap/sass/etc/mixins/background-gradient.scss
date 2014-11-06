@@ -1,0 +1,8 @@
+@function linear-gradient-glossy($direction, $bg-color) {
+    @return linear-gradient($direction, color_stops(
+        //lighten($bg-color, 15%),
+        lighten($bg-color, 5%) 0%,
+        //$bg-color 51%,
+        darken(#11375c, 5%) 100%
+    ));
+}

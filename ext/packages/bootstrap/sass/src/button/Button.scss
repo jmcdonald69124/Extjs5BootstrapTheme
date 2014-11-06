@@ -1,0 +1,293 @@
+
+.x-btn-icon-el-bootstrap-btn-default-small{
+    color   : $default-color  !important;
+}
+.x-btn-icon-el-bootstrap-btn-primary-small{
+    color   : $primary-color !important;
+}
+.x-btn-icon-el-bootstrap-btn-warning-small{
+    color   : $warning-color !important;
+}
+.x-btn-icon-el-bootstrap-btn-success-small{
+    color   : $success-color !important;
+}
+.x-btn-icon-el-bootstrap-btn-info-small{
+    color   : $info-color !important;
+}
+
+.x-btn-focus .x-btn-pressed .x-btn-icon-el-bootstrap-btn-success-small .x-btn-inner,
+.x-btn-focus .x-btn-over .x-btn-icon-el-bootstrap-btn-success-small .x-btn-inner{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.x-btn-focus .x-btn-pressed .x-btn-icon-el-bootstrap-btn-default-small .x-btn-inner,
+.x-btn-focus .x-btn-over .x-btn-icon-el-bootstrap-btn-default-small .x-btn-inner{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.x-btn-focus .x-btn-pressed .x-btn-icon-el-bootstrap-btn-info-small .x-btn-inner,
+.x-btn-focus .x-btn-over .x-btn-icon-el-bootstrap-btn-info-small .x-btn-inner{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.x-btn-focus .x-btn-pressed .x-btn-icon-el-bootstrap-btn-warning-small .x-btn-inner,
+.x-btn-focus .x-btn-over .x-btn-icon-el-bootstrap-btn-warning-small .x-btn-inner{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.x-btn-focus .x-btn-pressed .x-btn-icon-el-bootstrap-btn-danger-small .x-btn-inner,
+.x-btn-focus .x-btn-over .x-btn-icon-el-bootstrap-btn-danger-small .x-btn-inner{
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.x-btn-focus .x-btn-pressed .x-btn-icon-el-bootstrap-btn-primary-small .x-btn-inner,
+.x-btn-focus .x-btn-over .x-btn-icon-el-bootstrap-btn-primary-small .x-btn-inner{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+@include extjs-button-ui(
+    /* UI + Scale */
+    'bootstrap-btn-success-small',
+
+    $border-radius              : $bootstrap-btn-border-radius,
+    $border-width               : $bootstrap-btn-border-width,
+
+    $border-color               : $success-border-color,
+    $border-color-over          : $success-border-color-over,
+    $border-color-focus         : $success-border-color-over,
+    $border-color-pressed       : $success-border-color-over,
+    $border-color-disabled      : lighten($primary-border-color-over, 25% ),
+
+    $padding                    : $bootstrap-btn-padding,
+    $text-padding               : $button-small-text-padding,
+
+    $background-color           : $success-background-color,
+    $background-color-over      : $success-background-color-over,
+    $background-color-focus     : $success-background-color-over,
+    $background-color-pressed   : $success-background-color-over,
+    $background-color-disabled  : lighten($success-background-color-over, 25% ),
+
+    $color                       : $success-color,
+    $color-over                  : $success-color,
+    $color-focus                 : $success-color,
+    $color-pressed               : $success-color,
+    $color-disabled              : $success-color,
+
+    $font-size                   : $bootstrap-btn-font-size,
+    $font-size-over              : $bootstrap-btn-font-size,
+    $font-size-focus             : $bootstrap-btn-font-size,
+    $font-size-pressed           : $bootstrap-btn-font-size,
+    $font-size-disabled          : $bootstrap-btn-font-size,
+
+    $font-weight                 : normal,
+    $font-weight-over            : normal,
+    $font-weight-focus           : normal,
+    $font-weight-pressed         : normal,
+    $font-weight-disabled        : normal,
+
+    $font-family                 : $bootstrap-font-family,
+    $font-family-over            : $bootstrap-font-family,
+    $font-family-focus           : $bootstrap-font-family,
+    $font-family-pressed         : $bootstrap-font-family,
+    $font-family-disabled        : $bootstrap-font-family,
+
+    $icon-size                   : $button-small-icon-size
+);
+
+@include extjs-button-ui(
+    /* UI + Scale */
+    'bootstrap-btn-primary-small',
+
+    $border-radius              : $bootstrap-btn-border-radius,
+    $border-width               : $bootstrap-btn-border-width,
+
+    $border-color               : $primary-border-color,
+    $border-color-over          : $primary-border-color-over,
+    $border-color-focus         : $primary-border-color-over,
+    $border-color-pressed       : $primary-border-color-over,
+    $border-color-disabled      : lighten($primary-border-color-over, 25% ),
+
+    $padding                    : $bootstrap-btn-padding,
+    $text-padding               : $button-small-text-padding,
+
+    $background-color           : $primary-background-color,
+    $background-color-over      : $primary-background-color-over,
+    $background-color-focus     : $primary-background-color-over,
+    $background-color-pressed   : $primary-background-color-over,
+    $background-color-disabled  : lighten($primary-background-color-over, 25% ),
+
+    $color                       : $primary-color,
+    $color-over                  : $primary-color,
+    $color-focus                 : $primary-color,
+    $color-pressed               : $primary-color,
+    $color-disabled              : $primary-color,
+
+    $font-size                   : $bootstrap-btn-font-size,
+    $font-size-over              : $bootstrap-btn-font-size,
+    $font-size-focus             : $bootstrap-btn-font-size,
+    $font-size-pressed           : $bootstrap-btn-font-size,
+    $font-size-disabled          : $bootstrap-btn-font-size,
+
+    $font-weight                 : normal,
+    $font-weight-over            : normal,
+    $font-weight-focus           : normal,
+    $font-weight-pressed         : normal,
+    $font-weight-disabled        : normal,
+
+    $font-family                 : $bootstrap-font-family,
+    $font-family-over            : $bootstrap-font-family,
+    $font-family-focus           : $bootstrap-font-family,
+    $font-family-pressed         : $bootstrap-font-family,
+    $font-family-disabled        : $bootstrap-font-family,
+
+    $icon-size                   : $button-small-icon-size
+);
+
+@include extjs-button-ui(
+    /* UI + Scale */
+    'bootstrap-btn-warning-small',
+
+    $border-radius              : $bootstrap-btn-border-radius,
+    $border-width               : $bootstrap-btn-border-width,
+
+    $border-color               : $warning-border-color,
+    $border-color-over          : $warning-border-color-over,
+    $border-color-focus         : $warning-border-color-over,
+    $border-color-pressed       : $warning-border-color-over,
+    $border-color-disabled      : lighten($warning-border-color-over, 25% ),
+
+    $padding                    : $bootstrap-btn-padding,
+    $text-padding               : $button-small-text-padding,
+
+    $background-color           : $warning-background-color,
+    $background-color-over      : $warning-background-color-over,
+    $background-color-focus     : $warning-background-color-over,
+    $background-color-pressed   : $warning-background-color-over,
+    $background-color-disabled  : lighten($warning-background-color-over, 25% ),
+
+    $color                       : $warning-color,
+    $color-over                  : $warning-color,
+    $color-focus                 : $warning-color,
+    $color-pressed               : $warning-color,
+    $color-disabled              : $warning-color,
+
+    $font-size                   : $bootstrap-btn-font-size,
+    $font-size-over              : $bootstrap-btn-font-size,
+    $font-size-focus             : $bootstrap-btn-font-size,
+    $font-size-pressed           : $bootstrap-btn-font-size,
+    $font-size-disabled          : $bootstrap-btn-font-size,
+
+    $font-weight                 : normal,
+    $font-weight-over            : normal,
+    $font-weight-focus           : normal,
+    $font-weight-pressed         : normal,
+    $font-weight-disabled        : normal,
+
+    $font-family                 : $bootstrap-font-family,
+    $font-family-over            : $bootstrap-font-family,
+    $font-family-focus           : $bootstrap-font-family,
+    $font-family-pressed         : $bootstrap-font-family,
+    $font-family-disabled        : $bootstrap-font-family,
+
+    $icon-size                   : $button-small-icon-size
+);
+
+@include extjs-button-ui(
+    /* UI + Scale */
+    'bootstrap-btn-info-small',
+
+    $border-radius              : $bootstrap-btn-border-radius,
+    $border-width               : $bootstrap-btn-border-width,
+
+    $border-color               : $info-border-color,
+    $border-color-over          : $info-border-color-over,
+    $border-color-focus         : $info-border-color-over,
+    $border-color-pressed       : $info-border-color-over,
+    $border-color-disabled      : lighten($info-border-color-over, 25% ),
+
+    $padding                    : $bootstrap-btn-padding,
+    $text-padding               : $button-small-text-padding,
+
+    $background-color           : $info-background-color,
+    $background-color-over      : $info-background-color-over,
+    $background-color-focus     : $info-background-color-over,
+    $background-color-pressed   : $info-background-color-over,
+    $background-color-disabled  : lighten($info-background-color-over, 25% ),
+
+    $color                       : $info-color,
+    $color-over                  : $info-color,
+    $color-focus                 : $info-color,
+    $color-pressed               : $info-color,
+    $color-disabled              : $info-color,
+
+    $font-size                   : $bootstrap-btn-font-size,
+    $font-size-over              : $bootstrap-btn-font-size,
+    $font-size-focus             : $bootstrap-btn-font-size,
+    $font-size-pressed           : $bootstrap-btn-font-size,
+    $font-size-disabled          : $bootstrap-btn-font-size,
+
+    $font-weight                 : normal,
+    $font-weight-over            : normal,
+    $font-weight-focus           : normal,
+    $font-weight-pressed         : normal,
+    $font-weight-disabled        : normal,
+
+    $font-family                 : $bootstrap-font-family,
+    $font-family-over            : $bootstrap-font-family,
+    $font-family-focus           : $bootstrap-font-family,
+    $font-family-pressed         : $bootstrap-font-family,
+    $font-family-disabled        : $bootstrap-font-family,
+
+    $icon-size                   : $button-small-icon-size
+);
+
+
+@include extjs-button-ui(
+    /* UI + Scale */
+    'bootstrap-btn-default-small',
+
+    $border-radius              : $bootstrap-btn-border-radius,
+    $border-width               : $bootstrap-btn-border-width,
+
+    $border-color               : $default-border-color,
+    $border-color-over          : $default-border-color-over,
+    $border-color-focus         : $default-border-color-over,
+    $border-color-pressed       : $default-border-color-over,
+    $border-color-disabled      : lighten($default-border-color-over, 25% ),
+
+    $padding                    : $bootstrap-btn-padding,
+    $text-padding               : $button-small-text-padding,
+
+    $background-color           : $default-background-color,
+    $background-color-over      : $default-background-color-over,
+    $background-color-focus     : $default-background-color-over,
+    $background-color-pressed   : $default-background-color-over,
+    $background-color-disabled  : lighten($default-background-color-over, 25% ),
+
+    $color                       : $default-color ,
+    $color-over                  : $default-color ,
+    $color-focus                 : $default-color ,
+    $color-pressed               : $default-color ,
+    $color-disabled              : $default-color ,
+
+    $font-size                   : $bootstrap-btn-font-size,
+    $font-size-over              : $bootstrap-btn-font-size,
+    $font-size-focus             : $bootstrap-btn-font-size,
+    $font-size-pressed           : $bootstrap-btn-font-size,
+    $font-size-disabled          : $bootstrap-btn-font-size,
+
+    $font-weight                 : normal,
+    $font-weight-over            : normal,
+    $font-weight-focus           : normal,
+    $font-weight-pressed         : normal,
+    $font-weight-disabled        : normal,
+
+    $font-family                 : $bootstrap-font-family,
+    $font-family-over            : $bootstrap-font-family,
+    $font-family-focus           : $bootstrap-font-family,
+    $font-family-pressed         : $bootstrap-font-family,
+    $font-family-disabled        : $bootstrap-font-family,
+
+    $icon-size                   : $button-small-icon-size
+);
+

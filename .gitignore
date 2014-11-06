@@ -1,0 +1,9 @@
+.idea/
+.sencha/
+ext/.sencha/
+ext/build/temp/
+ext/src/
+ext/build/.sass-cache/
+ext/ext-*
+ext/packages/ext**/
+ext/packages/sencha**/

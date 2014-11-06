@@ -1,0 +1,20 @@
+@import 'mixins';
+@import 'functions';
+@import 'bootstrap-css/bootstrap.min';
+@include fontFace('Glyphicons Halflings','fonts/glyphicons-halflings-regular');
+
+.glyphicon-trigger{
+    top             : 1px;
+    color           : #999;
+    background      : none !important;
+    font-family     : 'Glyphicons Halflings';
+    font-style      : normal;
+    vertical-align  : middle !important;
+    font-weight     : 400;
+    line-height     : 1;
+        -webkit-font-smoothing  :antialiased;
+        -moz-osx-font-smoothing : grayscale;
+}
+.glyphicon-trigger :hover{
+    color           : #777;
+}

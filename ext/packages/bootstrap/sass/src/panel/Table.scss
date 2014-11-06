@@ -1,0 +1,46 @@
+
+.bootstrap-table .x-grid-item>tbody>tr>td{
+    overflow: hidden;
+    padding: 4px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-width: 1px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 1.42857143;
+    vertical-align: top;
+}
+
+.x-grid-item>tbody>tr.success>td{
+    background-color: #dff0d8 !important;
+}
+
+.x-grid-item>tbody>tr.warning>td{
+    background-color: #fcf8e3 !important;
+}
+
+.x-grid-item>tbody>tr.danger>td{
+    background-color: #f2dede !important;
+}
+
+.x-grid-item>tbody>tr.info>td{
+    background-color: #d9edf7 !important;
+}
+.x-grid-item>tbody>tr.success:hover>td{
+    background-color: darken(#dff0d8, 15% ) !important;
+}
+
+.x-grid-item>tbody>tr.warning:hover>td{
+     background-color: darken(#fcf8e3, 15% ) !important;
+}
+
+.x-grid-item>tbody>tr.danger:hover>td{
+    background-color: darken(#f2dede, 15% ) !important;
+}
+
+.x-grid-item>tbody>tr.info:hover>td{
+    background-color: darken(#d9edf7, 15% ) !important;
+}
+
+.x-grid-item-focused .x-grid-cell-inner:before{
+    border: none !important;
+}

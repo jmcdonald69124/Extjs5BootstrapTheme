@@ -1,0 +1,28 @@
+@mixin bootstrap-btn-base()
+{
+
+      $color                       : #FFFFFF;
+      $color-over                  : #FFFFFF;
+      $color-focus                 : #FFFFFF;
+      $color-pressed               : #FFFFFF;
+      $color-disabled              : #FFFFFF;
+
+      $font-size                   : 14px;
+      $font-size-over              : 14px;
+      $font-size-focus             : 14px;
+      $font-size-pressed           : 14px;
+      $font-size-disabled          : 14px;
+
+      $font-weight                 : normal;
+      $font-weight-over            : normal;
+      $font-weight-focus           : normal;
+      $font-weight-pressed         : normal;
+      $font-weight-disabled        : normal;
+
+      $font-family                 : sans-serif;
+      $font-family-over            : sans-serif;
+      $font-family-focus           : sans-serif;
+      $font-family-pressed         : sans-serif;
+      $font-family-disabled        : sans-serif;
+
+}
