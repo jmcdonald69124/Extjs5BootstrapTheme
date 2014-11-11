@@ -7,3 +7,4 @@ ext/build/.sass-cache/
 ext/ext-*
 ext/packages/ext**/
 ext/packages/sencha**/
+ext/packages/bootstrap/Readme.md
