@@ -14,16 +14,19 @@
         </style>
       </head>
       <body>
-
+      <a name="getting-started"></a>
         <div class="container">
         <div class="row">
         <div class="col-md-9" role="main">
         <div class="bs-docs-section">
-        <h1 id="glyphicons" class="page-header">Getting Started - <small>Setting up a custom theme</small></h1>
+        <h1  class="page-header">Getting Started - <small>Setting up a custom theme</small></h1>
 
         <P>If you do not know how to set up a custom theme then please read the tutorial at <a href="http://docs.sencha.com/extjs/5.0/core_concepts/theming.html" target="_blank" accesskey="">http://docs.sencha.com/extjs/5.0/core_concepts/theming.html</a> before
         attempting to utilize this theme. <strong>The important parts required for getting this theme running are below for your convienence.</strong></p>
+        <h3>Download the Theme files from GitHub</h3>
+        <p>Download the .pkg file here : <a href="https://github.com/jmcdonald69124/Extjs5BootstrapTheme/tree/master/ext/build/bootstrap-ext" target="_blank">https://github.com/jmcdonald69124/Extjs5BootstrapTheme/tree/master/ext/build/bootstrap-ext</a></p>
 
+        <p>Download the complete source here : <a href="https://github.com/jmcdonald69124/Extjs5BootstrapTheme" target="_blank">https://github.com/jmcdonald69124/Extjs5BootstrapTheme</a></p>
 
         <h3 >Set up the Workspace</h3>
 
@@ -49,7 +52,7 @@
 
         <li>"ext" - contains the Ext JS SDK</li>
         <li>"packages" - contains the Ext JS locale and theme packages</li>
-
+        <a name="getting-started-generate"></a>
         <h3>Generating the Custom Theme Package and File Structure</h3>
 
         <p>Sencha Cmd simplifies the process of creating a custom theme by generating a theme package containing all the necessary files required for your custom theme.
@@ -82,7 +85,7 @@
             */
             "theme": "my-custom-theme",
         </code></pre>
-
+        <a name="getting-started-package"></a>
         <h3 >Building the Package</h3>
 
         <p>Now that you've modified the base color to your theme, you need to build an updated version of the theme css file
@@ -1310,14 +1313,16 @@
         </div>
 
 
-        <h2 id="glyphicons-how-to-use">How to use</h2>
-
+        <a name="glyphicons-use"></a>
+        <h2 id="glyphicons-how-to-use">How to use glyphs</h2>
+        <h3>Spans</h3>
         <h4 >Add them to existing elements that allow html to be included and rendered in a config option</h4>
 
         <p>Add them into xtemplates or text / html, and title configs via spans such as the one below. For this option use the class name directly under the icon above and prepend it with the class <strong>glyphicon</strong></p>
 
         <pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"<strong>glyphicon</strong> glyphicon-search"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre>
-
+        <a name="glyphicons-gp"></a>
+        <h3>Using the Glyph Property</h3>
         <h4>Add them via the glyph config option on the following elements in Extjs.</h4>
         <ul>
             <li>Button - <a href="http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.button.Button-cfg-glyph" target="_blank">http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.button.Button-cfg-glyph</a></li>
@@ -1335,29 +1340,31 @@
                 text            : 'Add'
             }
         </code></pre>
+        <a name="forms-combo-glyphs"></a>
 
+        <h3>Using the Glyph Property as the trigger style</h3>
         <h4>Add them to triggers by using the following format in the trigger cls congif option.</h4>
         <p>The extjs combobox and textfield allows for multiple triggers to be added by simply adding them in the <a href="http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.form.field.Text-cfg-triggers" target="_blank">
             triggers configuration object.</a> To use the icons above prefix them with the class <strong>glyphicon-trigger</strong> opposed to glyphicon.</p>
 
          <pre><code class="js">
              Ext.create('Ext.form.field.Text', {
-                 renderTo: Ext.getBody(),
-                 fieldLabel: 'My Custom Field',
-                 triggers: {
-                     foo: {
-                         cls: 'glyphicon-trigger glyphicon-earphone',
-                         handler: function() {
-                         console.log('foo trigger clicked');
-                     }
-                 },
-                 bar: {
-                     cls: 'glyphicon-trigger glyphicon-cloud-upload',
-                         handler: function() {
-                         console.log('bar trigger clicked');
-                         }
-                     }
-                 }
+                renderTo: Ext.getBody(),
+                fieldLabel: 'My Custom Field',
+                triggers: {
+                    foo: {
+                        cls: 'glyphicon-trigger glyphicon-earphone',
+                        handler: function() {
+                            console.log('foo trigger clicked');
+                        }
+                    },
+                    bar: {
+                        cls: 'glyphicon-trigger glyphicon-cloud-upload',
+                        handler: function() {
+                            console.log('bar trigger clicked');
+                        }
+                    }
+               }
              });
          </code></pre>
 
@@ -1644,7 +1651,107 @@
           </div>
       </div>
 
-      </div>
-      </div>
+        <div class="bs-docs-section">
+            <a name="panel-titles"></a>
+            <h1 id="grids" class="page-header"><a href="http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.panel.Panel" target="_blank">Panel Headers and Titles</a></h1>
+            <h3>Plain White</h3>
+            <p>The new theme comes with a way to change the panel headers to an all white background with an 18 pixel font size and a grey / white badge configuration. To change the appearance of the panel just add the following class.</p>
+
+      <pre><code>
+          {
+            xtype       : 'panel',
+            flex        : 1,
+            cls         : 'bootstrap-plain-panel',
+            border      : true,
+            title       : ' Widgets ',
+            layout  : {
+                type    : 'vbox',
+                pack    : 'start',
+                align   : 'stretch'
+            }
+            .....
+          }
+      </code></pre>
+
+        </div>
+
+        <div class="bs-docs-section">
+            <a name="badges"></a>
+            <h1 class="page-header">Badges</h1>
+
+            <p>Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt;</code> to links, Bootstrap navs, and more.</p>
+
+            <div class="bs-example">
+                <a href="#">Inbox <span class="badge">42</span></a>
+                <br><br>
+                <button class="btn btn-primary" type="button">
+                    Messages <span class="badge">4</span>
+                </button>
+            </div>
+            <h4>Self collapsing</h4>
+            <p>When there are no new or unread items, badges will simply collapse (via CSS's <code>:empty</code> selector) provided no content exists within.</p>
+
+            <div class="bs-callout bs-callout-danger">
+                <h4>Cross-browser compatibility</h4>
+                <p>Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty</code> selector.</p>
+            </div>
+        </div>
+
+
+        </div>
+        <div class="col-md-3">
+            <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" role="complementary">
+                <ul class="nav bs-docs-sidenav">
+
+                    <li>
+                        <a href="#getting-started">Getting Started</a>
+                        <ul class="nav" style="display:block">
+                            <li><a href="#getting-started-setup">Set up the workspace</a></li>
+                            <li><a href="#getting-started-generate">Generating the Custom Theme Package and File Structure</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#glyphicons">Glyphicons</a>
+                        <ul class="nav"  style="display:block">
+                            <li><a href="#glyphicons-avail">Available glyphs</a></li>
+                            <li><a href="#glyphicons-use">How to use glyphs</a></li>
+                            <ul class="nav"  style="display:block; padding-left:15px;">
+                                <li><a href="#glyphicons-use">Spans</a></li>
+                                <li><a href="#glyphicons-gp">Glyph Property</a></li>
+                                <li><a href="#forms-combo-glyphs">Combobox Triggers</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#buttons">Buttons</a>
+                        <ul class="nav"  style="display:block">
+                            <li><a href="#buttons">Options and implementation</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#forms">Forms</a>
+                        <ul class="nav"  style="display:block">
+                            <li><a href="#forms">Textfields</a></li>
+                            <li><a href="#forms-combo-glyphs">Combobox Glyphs</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#grids">Grids</a>
+                        <ul class="nav" style="display:block;">
+                            <li><a href="#contextual-classes">Contextual classes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#panel-titles">Panel Titles</a>
+                    </li>
+                    <li>
+                        <a href="#badges">Badges</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
       </body>
 </html>

@@ -1,5 +1,49 @@
+
+
 .x-panel-header-title > .x-title-text {
-   // text-shadow: 2px 1px 3px #333;
-    text-transform: uppercase;
-    font-weight: 700;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 600;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.x-panel-header-title > .x-title-text > .badge {
+  background-color: #FFFFFF;
+  color: #175f90;
+}
+
+
+.bootstrap-plain-panel .x-panel-header-title > .x-title-text ,
+.bootstrap-table-plain .x-panel-header-title > .x-title-text{
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  text-transform: none;
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.bootstrap-plain-panel  .x-panel-header-default,
+.bootstrap-table-plain  .x-panel-header-default
+{
+  background-color: #FFF;
+}
+.bootstrap-plain-panel .x-panel-header-title > .x-title-text > .badge,
+.bootstrap-table-plain  .x-panel-header-title > .x-title-text > .badge {
+  //text-shadow: 2px 1px 3px #333;
+  background-color: #777;
+  color: #FFF;
+}
+
+.bootstrap-plain-panel .x-panel-default-outer-border-trl,
+.bootstrap-table-plain .x-panel-default-outer-border-trl{
+  border-bottom-color: #777!important;
+  border-bottom-width: 1px!important;
 }
