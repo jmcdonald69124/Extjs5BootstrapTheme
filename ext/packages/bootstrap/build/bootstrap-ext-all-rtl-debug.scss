@@ -715,6 +715,7 @@ $include-extthemeneptune-picker-month: true;
 $include-extthemeneptune-resizer-splitter: true;
 $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
+$include-overrides-action: true;
 /* including package ext-theme-base */
 @import '../../ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
@@ -728,6 +729,8 @@ $include-extthemeneptune-toolbar-toolbar: true;
 @import '../sass/var/button/Button';
 @import '../sass/var/resizer/Splitter';
 @import '../sass/var/panel/Panel';
+@import '../sass/var/tab/Tab';
+@import '../sass/var/tab/Bar';
 /* including package ext-theme-neptune */
 @import '../../ext-theme-neptune/sass/var/Component';
 @import '../../ext-theme-neptune/sass/var/LoadMask';
@@ -981,3 +984,4 @@ $relative-image-path-for-uis: $bootstrap-ext-resource-path;
 @import '../sass/src/panel/Panel';
 @import '../sass/src/panel/Table';
 @import '../sass/src/form/field/Text';
+@import '../sass/src/tab/Tab';

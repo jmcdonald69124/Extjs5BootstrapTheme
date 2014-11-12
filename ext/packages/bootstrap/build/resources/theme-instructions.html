@@ -101,24 +101,7 @@
             all styles for every Ext JS component and most apps only use a subset of Ext JS components.
             Sencha Cmd has the ability to filter out unused CSS style rules when you build an app,
             but first we need to configure the test app to use the custom theme.</p>
-        <a name="iecompat"></a>
-        <h1  class="page-header">Internet Explorer Compatibility</h1>
 
-        <div class="bs-callout bs-callout-danger"><h4>This theme does not render in IE unless X-UA-Compatable is set to IE=edge </h4></p>
-        <pre><code class="html">
-            &lt;!DOCTYPE HTML&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-            &lt;title&gt;Awesome Bootstrap Extjs APP&lt;/title&gt;
-            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
-            &lt;meta charset="UTF-8"&gt;
-            &lt;!-- The line below must be kept intact for Sencha Cmd to build your application --&gt;
-            &lt;script id="microloader" type="text/javascript" src="bootstrap.js"&gt;&lt;/script&gt;
-
-            &lt;/head&gt;
-            &lt;body&gt;&lt;/body&gt;
-            &lt;/html>
-        </code></pre></div>
         <h1 id="glyphicons" class="page-header">Glyphicons</h1>
 
         <h2 id="glyphicons-glyphs">Available glyphs</h2>
@@ -1484,32 +1467,6 @@
                 }
 
             </code></pre></div>
-
-            <h2 id="fielfields">File Upload fields</h2>
-            <ul>
-                <li>Ext.form.field.File - <a href="http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.form.field.File" target="_blank">http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.form.field.File</a></li>
-            </ul>
-            <p>File upload fields are comprised of a button and input field. To set the button choose one of teh button ui's and set the field ui config option to <code>ui: 'bootstrap-text-field'</code>.
-                To set the input field where the file is shown after the user selects it add the following class  <code>cls : 'bootstrap-filefield'</code>.</p>
-
-            <div class="highlight"><pre><code class="js">
-
-                 {
-                    xtype         : 'filefield',
-                    name          : 'photo',
-                    fieldLabel    : 'Photo',
-                    labelWidth    : 50,
-                    msgTarget     : 'side',
-                    allowBlank    : false,
-                    // Make the button a primary bootstrap button
-                    ui            : 'bootstrap-btn-primary',
-                    cls           : 'bootstrap-filefield',
-                    anchor        : '100%',
-                    buttonText    : 'Select Photo...'
-                }
-
-            </code></pre></div>
-
       </div>
 
       <div class="bs-docs-section">
@@ -1566,46 +1523,7 @@
                 renderTo: Ext.getBody()
               });
           </code></pre></div>
-            <h2 id="glyphicons-action-cols">Use Glyphicons in place of icons in Extjs Action Columns</h2>
-            <p>This theme supports the use of the glyphicons above in the place of the icon in an action column. Use the list above in the glyphicons section to locate the appropriate class and add the class name
-                to the new <code>glpyphCls</code> property of the action column. </p>
 
-            <ul>
-                <li>Ext.grid.column.Action - <a href="http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.grid.column.Action" target="_blank" >http://docs.sencha.com/extjs/5.0/apidocs/#!/api/Ext.grid.column.Action</a></li>
-            </ul>
-
-            <div class="highlight"><pre><code class="js">
-
-                 Ext.create('Ext.grid.Panel', {
-                    title: 'Action Column Demo',
-                    store: Ext.data.StoreManager.lookup('employeeStore'),
-                    columns: [
-                        {text: 'First Name',  dataIndex:'firstname'},
-                        {text: 'Last Name',  dataIndex:'lastname'},
-                        {
-                            xtype:'actioncolumn',
-                            width:50,
-                            items: [{
-                                glyphCls: 'glyphicon-pencil',
-                                tooltip : 'Edit',
-                                handler : function(grid, rowIndex, colIndex) {
-                                    var rec = grid.getStore().getAt(rowIndex);
-                                    alert("Edit " + rec.get('firstname'));
-                                }
-                            },{
-                                glyphCls: 'glyphicon-trash',
-                                tooltip : 'Delete',
-                                handler : function(grid, rowIndex, colIndex) {
-                                    var rec = grid.getStore().getAt(rowIndex);
-                                    alert("Terminate " + rec.get('firstname'));
-                                }
-                            }]
-                        }
-                    ],
-                    width: 250,
-                    renderTo: Ext.getBody()
-              });
-            </code></pre></div>
           <h2 id="tables-contextual-classes">Contextual classes</h2>
           <p>Use contextual classes to color table rows. All contextual classes hover </p>
 
@@ -1793,9 +1711,6 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#iecompat">IE Compatibility Issues and Mitigation</a>
-                    </li>
-                    <li>
                         <a href="#glyphicons">Glyphicons</a>
                         <ul class="nav"  style="display:block">
                             <li><a href="#glyphicons-avail">Available glyphs</a></li>
@@ -1804,7 +1719,6 @@
                                 <li><a href="#glyphicons-use">Spans</a></li>
                                 <li><a href="#glyphicons-gp">Glyph Property</a></li>
                                 <li><a href="#forms-combo-glyphs">Combobox Triggers</a></li>
-                                <li><a href="#glyphicons-action-cols">Extjs Action Columns</a></li>
                             </ul>
                         </ul>
                     </li>
@@ -1818,7 +1732,6 @@
                         <a href="#forms">Forms</a>
                         <ul class="nav"  style="display:block">
                             <li><a href="#forms">Textfields</a></li>
-                            <li><a href="#fielfields">File Upload fields</a></li>
                             <li><a href="#forms-combo-glyphs">Combobox Glyphs</a></li>
                         </ul>
                     </li>
@@ -1826,7 +1739,6 @@
                         <a href="#grids">Grids</a>
                         <ul class="nav" style="display:block;">
                             <li><a href="#contextual-classes">Contextual classes</a></li>
-                            <li><a href="#glyphicons-action-cols">Glyphicons in Extjs Action Columns</a></li>
                         </ul>
                     </li>
                     <li>

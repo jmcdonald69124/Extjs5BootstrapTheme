@@ -83,7 +83,8 @@ var Ext = Ext || { }; Ext.manifest = {
     "Ext.util.ProtoElement": "src/util/ProtoElement.js",
     "Ext.util.Queue": "src/util/Queue.js",
     "Ext.util.Renderable": "src/util/Renderable.js",
-    "Ext.util.StoreHolder": "src/util/StoreHolder.js"
+    "Ext.util.StoreHolder": "src/util/StoreHolder.js",
+    "Ext.ux.desktop.TrayClock": "src/ux/desktop/TaskBar.js"
   },
   "loadOrder": [
     {
@@ -6383,6 +6384,642 @@ var Ext = Ext || { }; Ext.manifest = {
       "idx": 646
     },
     {
+      "path": "src/ux/BoxReorderer.js",
+      "requires": [
+        26,
+        364
+      ],
+      "uses": [
+        41
+      ],
+      "idx": 647
+    },
+    {
+      "path": "src/ux/CellDragDrop.js",
+      "requires": [
+        417
+      ],
+      "uses": [
+        89,
+        427,
+        642
+      ],
+      "idx": 648
+    },
+    {
+      "path": "src/ux/DataTip.js",
+      "requires": [
+        378,
+        417
+      ],
+      "uses": [
+        386
+      ],
+      "idx": 649
+    },
+    {
+      "path": "src/ux/DataView/Animated.js",
+      "requires": [],
+      "uses": [
+        56,
+        293
+      ],
+      "idx": 650
+    },
+    {
+      "path": "src/ux/DataView/DragSelector.js",
+      "requires": [
+        87,
+        418
+      ],
+      "uses": [],
+      "idx": 651
+    },
+    {
+      "path": "src/ux/DataView/Draggable.js",
+      "requires": [
+        421
+      ],
+      "uses": [
+        172,
+        398
+      ],
+      "idx": 652
+    },
+    {
+      "path": "src/ux/DataView/LabelEditor.js",
+      "requires": [
+        305,
+        442
+      ],
+      "uses": [
+        123,
+        314
+      ],
+      "idx": 653
+    },
+    {
+      "path": "src/ux/DataViewTransition.js",
+      "requires": [],
+      "uses": [
+        56,
+        293
+      ],
+      "idx": 654
+    },
+    {
+      "path": "src/ux/Explorer.js",
+      "requires": [
+        123,
+        314,
+        356,
+        371,
+        375,
+        391,
+        395,
+        398,
+        439,
+        445,
+        640
+      ],
+      "uses": [
+        172
+      ],
+      "idx": 655
+    },
+    {
+      "path": "src/ux/FieldReplicator.js",
+      "requires": [],
+      "uses": [],
+      "idx": 656
+    },
+    {
+      "path": "src/ux/GMapPanel.js",
+      "requires": [
+        375,
+        493
+      ],
+      "uses": [],
+      "idx": 657
+    },
+    {
+      "path": "src/ux/GroupTabRenderer.js",
+      "requires": [
+        101,
+        417
+      ],
+      "uses": [],
+      "idx": 658
+    },
+    {
+      "path": "src/ux/GroupTabPanel.js",
+      "requires": [
+        303,
+        439,
+        658
+      ],
+      "uses": [
+        123,
+        162,
+        166,
+        167,
+        191,
+        301,
+        314,
+        371,
+        391,
+        431,
+        434,
+        447
+      ],
+      "idx": 659
+    },
+    {
+      "path": "src/ux/IFrame.js",
+      "requires": [
+        71
+      ],
+      "uses": [],
+      "idx": 660
+    },
+    {
+      "path": "src/ux/statusbar/StatusBar.js",
+      "requires": [
+        362,
+        511
+      ],
+      "uses": [
+        123,
+        314
+      ],
+      "idx": 661
+    },
+    {
+      "path": "src/ux/LiveSearchGridPanel.js",
+      "requires": [
+        406,
+        408,
+        442,
+        511,
+        661
+      ],
+      "uses": [
+        123,
+        314,
+        346
+      ],
+      "idx": 662
+    },
+    {
+      "path": "src/ux/PreviewPlugin.js",
+      "requires": [
+        417,
+        557
+      ],
+      "uses": [],
+      "idx": 663
+    },
+    {
+      "path": "src/ux/ProgressBarPager.js",
+      "requires": [
+        316
+      ],
+      "uses": [
+        56,
+        123,
+        315
+      ],
+      "idx": 664
+    },
+    {
+      "path": "src/ux/RowExpander.js",
+      "requires": [
+        583
+      ],
+      "uses": [],
+      "idx": 665
+    },
+    {
+      "path": "src/ux/SlidingPager.js",
+      "requires": [
+        618,
+        622
+      ],
+      "uses": [
+        56,
+        123,
+        314
+      ],
+      "idx": 666
+    },
+    {
+      "path": "src/ux/Spotlight.js",
+      "requires": [],
+      "uses": [
+        19,
+        61
+      ],
+      "idx": 667
+    },
+    {
+      "path": "src/ux/TabCloseMenu.js",
+      "requires": [
+        26
+      ],
+      "uses": [
+        123,
+        358,
+        371,
+        564
+      ],
+      "idx": 668
+    },
+    {
+      "path": "src/ux/TabReorderer.js",
+      "requires": [
+        647
+      ],
+      "uses": [],
+      "idx": 669
+    },
+    {
+      "path": "src/ux/TabScrollerMenu.js",
+      "requires": [
+        564
+      ],
+      "uses": [
+        19,
+        55,
+        123,
+        358,
+        371
+      ],
+      "idx": 670
+    },
+    {
+      "path": "src/ux/ToolbarDroppable.js",
+      "requires": [],
+      "uses": [
+        425
+      ],
+      "idx": 671
+    },
+    {
+      "path": "src/ux/TreePicker.js",
+      "requires": [
+        509
+      ],
+      "uses": [
+        123,
+        371,
+        391,
+        439
+      ],
+      "idx": 672
+    },
+    {
+      "path": "src/ux/ajax/Simlet.js",
+      "requires": [],
+      "uses": [
+        676
+      ],
+      "idx": 673
+    },
+    {
+      "path": "src/ux/ajax/DataSimlet.js",
+      "requires": [
+        673
+      ],
+      "uses": [
+        170
+      ],
+      "idx": 674
+    },
+    {
+      "path": "src/ux/ajax/JsonSimlet.js",
+      "requires": [
+        674
+      ],
+      "uses": [],
+      "idx": 675
+    },
+    {
+      "path": "src/ux/ajax/SimXhr.js",
+      "requires": [],
+      "uses": [],
+      "idx": 676
+    },
+    {
+      "path": "src/ux/ajax/SimManager.js",
+      "requires": [
+        9,
+        673,
+        675,
+        676
+      ],
+      "uses": [
+        180
+      ],
+      "idx": 677
+    },
+    {
+      "path": "src/ux/ajax/XmlSimlet.js",
+      "requires": [
+        674
+      ],
+      "uses": [
+        101
+      ],
+      "idx": 678
+    },
+    {
+      "path": "src/ux/google/Api.js",
+      "requires": [
+        276
+      ],
+      "uses": [],
+      "idx": 679
+    },
+    {
+      "path": "src/ux/google/Feeds.js",
+      "requires": [
+        679
+      ],
+      "uses": [],
+      "idx": 680
+    },
+    {
+      "path": "src/ux/dashboard/GoogleRssView.js",
+      "requires": [
+        71,
+        378,
+        680
+      ],
+      "uses": [
+        19,
+        123,
+        301,
+        371
+      ],
+      "idx": 681
+    },
+    {
+      "path": "src/ux/dashboard/GoogleRssPart.js",
+      "requires": [
+        123,
+        314,
+        483,
+        493,
+        681
+      ],
+      "uses": [],
+      "idx": 682
+    },
+    {
+      "path": "src/ux/data/PagingMemoryProxy.js",
+      "requires": [
+        162
+      ],
+      "uses": [],
+      "idx": 683
+    },
+    {
+      "path": "src/ux/dd/CellFieldDropZone.js",
+      "requires": [
+        427
+      ],
+      "uses": [],
+      "idx": 684
+    },
+    {
+      "path": "src/ux/dd/PanelFieldDragZone.js",
+      "requires": [
+        421
+      ],
+      "uses": [
+        386
+      ],
+      "idx": 685
+    },
+    {
+      "path": "src/ux/desktop/Desktop.js",
+      "requires": [
+        375
+      ],
+      "uses": [
+        30,
+        101,
+        123,
+        314,
+        395,
+        398,
+        458,
+        564,
+        691,
+        693
+      ],
+      "idx": 686
+    },
+    {
+      "path": "src/ux/desktop/App.js",
+      "requires": [
+        26,
+        471,
+        686
+      ],
+      "uses": [
+        123,
+        314,
+        380,
+        391
+      ],
+      "idx": 687
+    },
+    {
+      "path": "src/ux/desktop/Module.js",
+      "requires": [
+        26
+      ],
+      "uses": [],
+      "idx": 688
+    },
+    {
+      "path": "src/ux/desktop/ShortcutModel.js",
+      "requires": [
+        156
+      ],
+      "uses": [],
+      "idx": 689
+    },
+    {
+      "path": "src/ux/desktop/StartMenu.js",
+      "requires": [
+        362,
+        375,
+        564
+      ],
+      "uses": [
+        123,
+        344,
+        358,
+        371
+      ],
+      "idx": 690
+    },
+    {
+      "path": "src/ux/desktop/TaskBar.js",
+      "requires": [
+        346,
+        353,
+        362,
+        511,
+        564,
+        690
+      ],
+      "uses": [
+        55,
+        101,
+        123,
+        314
+      ],
+      "idx": 691
+    },
+    {
+      "path": "src/ux/desktop/Video.js",
+      "requires": [
+        375
+      ],
+      "uses": [],
+      "idx": 692
+    },
+    {
+      "path": "src/ux/desktop/Wallpaper.js",
+      "requires": [
+        71
+      ],
+      "uses": [],
+      "idx": 693
+    },
+    {
+      "path": "src/ux/event/Driver.js",
+      "requires": [
+        26
+      ],
+      "uses": [],
+      "idx": 694
+    },
+    {
+      "path": "src/ux/event/Maker.js",
+      "requires": [],
+      "uses": [
+        15
+      ],
+      "idx": 695
+    },
+    {
+      "path": "src/ux/event/Player.js",
+      "requires": [
+        694
+      ],
+      "uses": [],
+      "idx": 696
+    },
+    {
+      "path": "src/ux/event/Recorder.js",
+      "requires": [
+        694
+      ],
+      "uses": [],
+      "idx": 697
+    },
+    {
+      "path": "src/ux/event/RecorderManager.js",
+      "requires": [
+        375
+      ],
+      "uses": [
+        123,
+        314,
+        462,
+        492,
+        511,
+        696,
+        697
+      ],
+      "idx": 698
+    },
+    {
+      "path": "src/ux/form/MultiSelect.js",
+      "requires": [
+        311,
+        375,
+        388,
+        391,
+        497,
+        516
+      ],
+      "uses": [
+        56,
+        542,
+        642
+      ],
+      "idx": 699
+    },
+    {
+      "path": "src/ux/form/ItemSelector.js",
+      "requires": [
+        346,
+        699
+      ],
+      "uses": [
+        123,
+        303,
+        314,
+        358,
+        472,
+        496
+      ],
+      "idx": 700
+    },
+    {
+      "path": "src/ux/form/SearchField.js",
+      "requires": [
+        442
+      ],
+      "uses": [
+        23,
+        188
+      ],
+      "idx": 701
+    },
+    {
+      "path": "src/ux/grid/SubTable.js",
+      "requires": [
+        583
+      ],
+      "uses": [],
+      "idx": 702
+    },
+    {
+      "path": "src/ux/grid/TransformGrid.js",
+      "requires": [
+        406
+      ],
+      "uses": [],
+      "idx": 703
+    },
+    {
+      "path": "src/ux/statusbar/ValidationStatus.js",
+      "requires": [
+        30,
+        71
+      ],
+      "uses": [
+        194
+      ],
+      "idx": 704
+    },
+    {
       "path": "src/view/MultiSelectorSearch.js",
       "requires": [
         375
@@ -6397,7 +7034,7 @@ var Ext = Ext || { }; Ext.manifest = {
         406,
         442
       ],
-      "idx": 647
+      "idx": 705
     },
     {
       "path": "src/view/MultiSelector.js",
@@ -6406,10 +7043,10 @@ var Ext = Ext || { }; Ext.manifest = {
         371,
         391,
         406,
-        647
+        705
       ],
       "uses": [],
-      "idx": 648
+      "idx": 706
     },
     {
       "path": "src/window/Toast.js",
@@ -6419,7 +7056,7 @@ var Ext = Ext || { }; Ext.manifest = {
       "uses": [
         24
       ],
-      "idx": 649
+      "idx": 707
     }
   ],
   "classes": {
@@ -10431,6 +11068,364 @@ var Ext = Ext || { }; Ext.manifest = {
       "alias": [],
       "alternates": []
     },
+    "Ext.ux.BoxReorderer": {
+      "idx": 647,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.CellDragDrop": {
+      "idx": 648,
+      "alias": [
+        "plugin.celldragdrop"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.DataTip": {
+      "idx": 649,
+      "alias": [
+        "plugin.datatip"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.DataView.Animated": {
+      "idx": 650,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.DataView.DragSelector": {
+      "idx": 651,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.DataView.Draggable": {
+      "idx": 652,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.DataView.LabelEditor": {
+      "idx": 653,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.Explorer": {
+      "idx": 655,
+      "alias": [
+        "widget.explorer"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.FieldReplicator": {
+      "idx": 656,
+      "alias": [
+        "plugin.fieldreplicator"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.GMapPanel": {
+      "idx": 657,
+      "alias": [
+        "widget.gmappanel"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.GroupTabPanel": {
+      "idx": 659,
+      "alias": [
+        "widget.grouptabpanel"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.GroupTabRenderer": {
+      "idx": 658,
+      "alias": [
+        "plugin.grouptabrenderer"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.IFrame": {
+      "idx": 660,
+      "alias": [
+        "widget.uxiframe"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.LiveSearchGridPanel": {
+      "idx": 662,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.PreviewPlugin": {
+      "idx": 663,
+      "alias": [
+        "plugin.preview"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.ProgressBarPager": {
+      "idx": 664,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.RowExpander": {
+      "idx": 665,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.SlidingPager": {
+      "idx": 666,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.Spotlight": {
+      "idx": 667,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.TabCloseMenu": {
+      "idx": 668,
+      "alias": [
+        "plugin.tabclosemenu"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.TabReorderer": {
+      "idx": 669,
+      "alias": [
+        "plugin.tabreorderer"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.TabScrollerMenu": {
+      "idx": 670,
+      "alias": [
+        "plugin.tabscrollermenu"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.ToolbarDroppable": {
+      "idx": 671,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.TreePicker": {
+      "idx": 672,
+      "alias": [
+        "widget.treepicker"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.ajax.DataSimlet": {
+      "idx": 674,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.ajax.JsonSimlet": {
+      "idx": 675,
+      "alias": [
+        "simlet.json"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.ajax.SimManager": {
+      "idx": 677,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.ajax.SimXhr": {
+      "idx": 676,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.ajax.Simlet": {
+      "idx": 673,
+      "alias": [
+        "simlet.basic"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.ajax.XmlSimlet": {
+      "idx": 678,
+      "alias": [
+        "simlet.xml"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.dashboard.GoogleRssPart": {
+      "idx": 682,
+      "alias": [
+        "part.google-rss"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.dashboard.GoogleRssView": {
+      "idx": 681,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.data.PagingMemoryProxy": {
+      "idx": 683,
+      "alias": [
+        "proxy.pagingmemory"
+      ],
+      "alternates": [
+        "Ext.data.PagingMemoryProxy"
+      ]
+    },
+    "Ext.ux.dd.CellFieldDropZone": {
+      "idx": 684,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.dd.PanelFieldDragZone": {
+      "idx": 685,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.desktop.App": {
+      "idx": 687,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.desktop.Desktop": {
+      "idx": 686,
+      "alias": [
+        "widget.desktop"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.desktop.Module": {
+      "idx": 688,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.desktop.ShortcutModel": {
+      "idx": 689,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.desktop.StartMenu": {
+      "idx": 690,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.desktop.TaskBar": {
+      "idx": 691,
+      "alias": [
+        "widget.taskbar"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.desktop.TrayClock": {
+      "idx": 691,
+      "alias": [
+        "widget.trayclock"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.desktop.Video": {
+      "idx": 692,
+      "alias": [
+        "widget.video"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.desktop.Wallpaper": {
+      "idx": 693,
+      "alias": [
+        "widget.wallpaper"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.event.Driver": {
+      "idx": 694,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.event.Maker": {
+      "idx": 695,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.event.Player": {
+      "idx": 696,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.event.Recorder": {
+      "idx": 697,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.event.RecorderManager": {
+      "idx": 698,
+      "alias": [
+        "widget.eventrecordermanager"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.form.ItemSelector": {
+      "idx": 700,
+      "alias": [
+        "widget.itemselector",
+        "widget.itemselectorfield"
+      ],
+      "alternates": [
+        "Ext.ux.ItemSelector"
+      ]
+    },
+    "Ext.ux.form.MultiSelect": {
+      "idx": 699,
+      "alias": [
+        "widget.multiselect",
+        "widget.multiselectfield"
+      ],
+      "alternates": [
+        "Ext.ux.Multiselect"
+      ]
+    },
+    "Ext.ux.form.SearchField": {
+      "idx": 701,
+      "alias": [
+        "widget.searchfield"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.google.Api": {
+      "idx": 679,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.google.Feeds": {
+      "idx": 680,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.grid.SubTable": {
+      "idx": 702,
+      "alias": [
+        "plugin.subtable"
+      ],
+      "alternates": []
+    },
+    "Ext.ux.grid.TransformGrid": {
+      "idx": 703,
+      "alias": [],
+      "alternates": []
+    },
+    "Ext.ux.statusbar.StatusBar": {
+      "idx": 661,
+      "alias": [
+        "widget.statusbar"
+      ],
+      "alternates": [
+        "Ext.ux.StatusBar"
+      ]
+    },
+    "Ext.ux.statusbar.ValidationStatus": {
+      "idx": 704,
+      "alias": [],
+      "alternates": []
+    },
     "Ext.view.AbstractView": {
       "idx": 397,
       "alias": [],
@@ -10463,14 +11458,14 @@ var Ext = Ext || { }; Ext.manifest = {
       "alternates": []
     },
     "Ext.view.MultiSelector": {
-      "idx": 648,
+      "idx": 706,
       "alias": [
         "widget.multiselector"
       ],
       "alternates": []
     },
     "Ext.view.MultiSelectorSearch": {
-      "idx": 647,
+      "idx": 705,
       "alias": [
         "widget.multiselector-search"
       ],
@@ -10519,7 +11514,7 @@ var Ext = Ext || { }; Ext.manifest = {
       "alternates": []
     },
     "Ext.window.Toast": {
-      "idx": 649,
+      "idx": 707,
       "alias": [
         "widget.toast"
       ],

@@ -1,0 +1,28 @@
+@include extjs-tab-panel-ui(
+  $ui                               : 'bootstrap-nav-pills-tabs-danger',
+  $ui-tab-background-color          : #FFFFFF,
+  $ui-tab-background-color-focus    : #CC0015,
+  $ui-tab-background-color-over     : #CCC,
+  $ui-tab-background-color-active   : #CC0015,
+  $ui-tab-font-size                 : 14px,
+  $ui-tab-font-size-active          : 14px,
+  $ui-tab-font-size-focus           : 14px,
+
+  $ui-tab-font-size-focus-over      : 14px,
+  $ui-tab-font-size-disabled        : 14px,
+  $ui-tab-padding                   : 10px 15px,
+  $ui-tab-font-family               : ("Helvetica Neue",Helvetica,Arial,sans-serif !important),
+  $ui-tab-color-active              : #FFFFFF,
+  $ui-tab-color                     : #333,
+  $ui-tab-font-weight               : 600
+);
+
+
+
+.x-tab-bar-bootstrap-nav-pills-tabs-danger {
+  background-color: white !important;
+}
+
+.x-tab-bootstrap-nav-pills-tabs-danger-top{
+  border-radius: 5px;
+}

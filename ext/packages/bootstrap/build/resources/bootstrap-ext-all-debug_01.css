@@ -28902,18 +28902,11 @@ div.x-border-layout-ct {
  */
 /* line 187, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top {
-  -moz-border-radius-topleft: 3px;
-  -webkit-border-top-left-radius: 3px;
-  border-top-left-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -webkit-border-top-right-radius: 3px;
-  border-top-right-radius: 3px;
-  -moz-border-radius-bottomright: 0;
-  -webkit-border-bottom-right-radius: 0;
-  border-bottom-right-radius: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-bottom-left-radius: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   padding: 7px 12px 6px 12px;
   border-width: 1px;
   border-style: solid;
@@ -28940,27 +28933,27 @@ div.x-border-layout-ct {
 
 /* line 281, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-frameInfo {
-  font-family: th-3-3-3-3-1-1-1-1-7-12-6-12;
+  font-family: th-4-4-4-4-1-1-1-1-7-12-6-12;
 }
 
 /* line 347, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-tl {
-  background-position: 0 -6px;
+  background-position: 0 -8px;
 }
 
 /* line 351, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-tr {
-  background-position: right -9px;
+  background-position: right -12px;
 }
 
 /* line 355, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-bl {
-  background-position: 0 -12px;
+  background-position: 0 -16px;
 }
 
 /* line 359, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-br {
-  background-position: right -15px;
+  background-position: right -20px;
 }
 
 /* line 363, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
@@ -28980,24 +28973,24 @@ div.x-border-layout-ct {
 
 /* line 383, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-bc {
-  background-position: 0 -3px;
+  background-position: 0 -4px;
 }
 
 /* line 390, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-tr,
 .x-tab-default-top-br,
 .x-tab-default-top-mr {
-  padding-right: 3px;
+  padding-right: 4px;
 }
 
 /* line 396, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-tl,
 .x-tab-default-top-bl,
 .x-tab-default-top-ml {
-  padding-left: 3px;
+  padding-left: 4px;
 }
 
 /* line 400, ../../../ext-theme-base/sass/etc/mixins/frame.scss */
 .x-tab-default-top-tc {
-  height: 3px;
+  height: 4px;
 }

@@ -87,7 +87,8 @@ Ext.Loader.addBaseUrlClassPathMappings({
   "Ext.util.ProtoElement": "src/util/ProtoElement.js",
   "Ext.util.Queue": "src/util/Queue.js",
   "Ext.util.Renderable": "src/util/Renderable.js",
-  "Ext.util.StoreHolder": "src/util/StoreHolder.js"
+  "Ext.util.StoreHolder": "src/util/StoreHolder.js",
+  "Ext.ux.desktop.TrayClock": "src/ux/desktop/TaskBar.js"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -1037,6 +1038,72 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.util.translatable.Dom": [],
   "Ext.util.translatable.ScrollParent": [],
   "Ext.util.translatable.ScrollPosition": [],
+  "Ext.ux.BoxReorderer": [],
+  "Ext.ux.CellDragDrop": [],
+  "Ext.ux.DataTip": [],
+  "Ext.ux.DataView.Animated": [],
+  "Ext.ux.DataView.DragSelector": [],
+  "Ext.ux.DataView.Draggable": [],
+  "Ext.ux.DataView.LabelEditor": [],
+  "Ext.ux.Explorer": [],
+  "Ext.ux.FieldReplicator": [],
+  "Ext.ux.GMapPanel": [],
+  "Ext.ux.GroupTabPanel": [],
+  "Ext.ux.GroupTabRenderer": [],
+  "Ext.ux.IFrame": [],
+  "Ext.ux.LiveSearchGridPanel": [],
+  "Ext.ux.PreviewPlugin": [],
+  "Ext.ux.ProgressBarPager": [],
+  "Ext.ux.RowExpander": [],
+  "Ext.ux.SlidingPager": [],
+  "Ext.ux.Spotlight": [],
+  "Ext.ux.TabCloseMenu": [],
+  "Ext.ux.TabReorderer": [],
+  "Ext.ux.TabScrollerMenu": [],
+  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.TreePicker": [],
+  "Ext.ux.ajax.DataSimlet": [],
+  "Ext.ux.ajax.JsonSimlet": [],
+  "Ext.ux.ajax.SimManager": [],
+  "Ext.ux.ajax.SimXhr": [],
+  "Ext.ux.ajax.Simlet": [],
+  "Ext.ux.ajax.XmlSimlet": [],
+  "Ext.ux.dashboard.GoogleRssPart": [],
+  "Ext.ux.dashboard.GoogleRssView": [],
+  "Ext.ux.data.PagingMemoryProxy": [
+    "Ext.data.PagingMemoryProxy"
+  ],
+  "Ext.ux.dd.CellFieldDropZone": [],
+  "Ext.ux.dd.PanelFieldDragZone": [],
+  "Ext.ux.desktop.App": [],
+  "Ext.ux.desktop.Desktop": [],
+  "Ext.ux.desktop.Module": [],
+  "Ext.ux.desktop.ShortcutModel": [],
+  "Ext.ux.desktop.StartMenu": [],
+  "Ext.ux.desktop.TaskBar": [],
+  "Ext.ux.desktop.TrayClock": [],
+  "Ext.ux.desktop.Video": [],
+  "Ext.ux.desktop.Wallpaper": [],
+  "Ext.ux.event.Driver": [],
+  "Ext.ux.event.Maker": [],
+  "Ext.ux.event.Player": [],
+  "Ext.ux.event.Recorder": [],
+  "Ext.ux.event.RecorderManager": [],
+  "Ext.ux.form.ItemSelector": [
+    "Ext.ux.ItemSelector"
+  ],
+  "Ext.ux.form.MultiSelect": [
+    "Ext.ux.Multiselect"
+  ],
+  "Ext.ux.form.SearchField": [],
+  "Ext.ux.google.Api": [],
+  "Ext.ux.google.Feeds": [],
+  "Ext.ux.grid.SubTable": [],
+  "Ext.ux.grid.TransformGrid": [],
+  "Ext.ux.statusbar.StatusBar": [
+    "Ext.ux.StatusBar"
+  ],
+  "Ext.ux.statusbar.ValidationStatus": [],
   "Ext.view.AbstractView": [],
   "Ext.view.BoundList": [
     "Ext.BoundList"
@@ -2236,6 +2303,124 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.util.translatable.Dom": [],
   "Ext.util.translatable.ScrollParent": [],
   "Ext.util.translatable.ScrollPosition": [],
+  "Ext.ux.BoxReorderer": [],
+  "Ext.ux.CellDragDrop": [
+    "plugin.celldragdrop"
+  ],
+  "Ext.ux.DataTip": [
+    "plugin.datatip"
+  ],
+  "Ext.ux.DataView.Animated": [],
+  "Ext.ux.DataView.DragSelector": [],
+  "Ext.ux.DataView.Draggable": [],
+  "Ext.ux.DataView.LabelEditor": [],
+  "Ext.ux.Explorer": [
+    "widget.explorer"
+  ],
+  "Ext.ux.FieldReplicator": [
+    "plugin.fieldreplicator"
+  ],
+  "Ext.ux.GMapPanel": [
+    "widget.gmappanel"
+  ],
+  "Ext.ux.GroupTabPanel": [
+    "widget.grouptabpanel"
+  ],
+  "Ext.ux.GroupTabRenderer": [
+    "plugin.grouptabrenderer"
+  ],
+  "Ext.ux.IFrame": [
+    "widget.uxiframe"
+  ],
+  "Ext.ux.LiveSearchGridPanel": [],
+  "Ext.ux.PreviewPlugin": [
+    "plugin.preview"
+  ],
+  "Ext.ux.ProgressBarPager": [],
+  "Ext.ux.RowExpander": [],
+  "Ext.ux.SlidingPager": [],
+  "Ext.ux.Spotlight": [],
+  "Ext.ux.TabCloseMenu": [
+    "plugin.tabclosemenu"
+  ],
+  "Ext.ux.TabReorderer": [
+    "plugin.tabreorderer"
+  ],
+  "Ext.ux.TabScrollerMenu": [
+    "plugin.tabscrollermenu"
+  ],
+  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.TreePicker": [
+    "widget.treepicker"
+  ],
+  "Ext.ux.ajax.DataSimlet": [],
+  "Ext.ux.ajax.JsonSimlet": [
+    "simlet.json"
+  ],
+  "Ext.ux.ajax.SimManager": [],
+  "Ext.ux.ajax.SimXhr": [],
+  "Ext.ux.ajax.Simlet": [
+    "simlet.basic"
+  ],
+  "Ext.ux.ajax.XmlSimlet": [
+    "simlet.xml"
+  ],
+  "Ext.ux.dashboard.GoogleRssPart": [
+    "part.google-rss"
+  ],
+  "Ext.ux.dashboard.GoogleRssView": [],
+  "Ext.ux.data.PagingMemoryProxy": [
+    "proxy.pagingmemory"
+  ],
+  "Ext.ux.dd.CellFieldDropZone": [],
+  "Ext.ux.dd.PanelFieldDragZone": [],
+  "Ext.ux.desktop.App": [],
+  "Ext.ux.desktop.Desktop": [
+    "widget.desktop"
+  ],
+  "Ext.ux.desktop.Module": [],
+  "Ext.ux.desktop.ShortcutModel": [],
+  "Ext.ux.desktop.StartMenu": [],
+  "Ext.ux.desktop.TaskBar": [
+    "widget.taskbar"
+  ],
+  "Ext.ux.desktop.TrayClock": [
+    "widget.trayclock"
+  ],
+  "Ext.ux.desktop.Video": [
+    "widget.video"
+  ],
+  "Ext.ux.desktop.Wallpaper": [
+    "widget.wallpaper"
+  ],
+  "Ext.ux.event.Driver": [],
+  "Ext.ux.event.Maker": [],
+  "Ext.ux.event.Player": [],
+  "Ext.ux.event.Recorder": [],
+  "Ext.ux.event.RecorderManager": [
+    "widget.eventrecordermanager"
+  ],
+  "Ext.ux.form.ItemSelector": [
+    "widget.itemselector",
+    "widget.itemselectorfield"
+  ],
+  "Ext.ux.form.MultiSelect": [
+    "widget.multiselect",
+    "widget.multiselectfield"
+  ],
+  "Ext.ux.form.SearchField": [
+    "widget.searchfield"
+  ],
+  "Ext.ux.google.Api": [],
+  "Ext.ux.google.Feeds": [],
+  "Ext.ux.grid.SubTable": [
+    "plugin.subtable"
+  ],
+  "Ext.ux.grid.TransformGrid": [],
+  "Ext.ux.statusbar.StatusBar": [
+    "widget.statusbar"
+  ],
+  "Ext.ux.statusbar.ValidationStatus": [],
   "Ext.view.AbstractView": [],
   "Ext.view.BoundList": [
     "widget.boundlist"
